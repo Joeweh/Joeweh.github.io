@@ -83,6 +83,14 @@ nav {
     color: #00A0DC;
 }
 
+.social-link-youtube {
+    color: #FF0000;
+}
+
+.social-link-youtube:hover {
+    color: #CC0000;
+}
+
 section {
     max-width: 1000px;
     margin-inline: auto;

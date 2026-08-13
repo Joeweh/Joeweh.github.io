@@ -63,6 +63,14 @@ nav {
     transition: color 0.2s ease;
 }
 
+.social-link-email {
+    color: #333;
+}
+
+.social-link-email:hover {
+    color: black;
+}
+
 .social-link-github {
     color: #181717;
 }

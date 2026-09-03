@@ -4,7 +4,8 @@
   "description": "My personal portfolio website showcasing projects, experience, and contact information.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",

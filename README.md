@@ -29,7 +29,7 @@ npm i
 npm run dev
 ```
 
-Then open `http://localhost:8080`.
+Then open [http://localhost:8080](http://localhost:8080).
 
 To build without serving:
 ```bash

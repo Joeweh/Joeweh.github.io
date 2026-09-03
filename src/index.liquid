@@ -64,64 +64,41 @@
 <header>
     <h1>Joseph Siracusa</h1>
     <p class="headline">
-            <span>
-                SWE Research Intern @
-                <a
-                        class="text-link"
-                        href="https://www.khoury.northeastern.edu/current-masters-and-certificate-students/khoury-research-apprenticeship/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >Khoury College of CS</a>
+        <span>
+            SWE Research Intern @
+            <a class="text-link"
+               href="https://www.khoury.northeastern.edu/current-masters-and-certificate-students/khoury-research-apprenticeship/"
+               target="_blank"
+               rel="noopener noreferrer"
+            >Khoury College of CS</a>
             </span>
         <span>
-                Prev SWE Intern @
-                <a
-                        class="text-link"
-                        href="https://nunext.dev/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >NExT Consulting</a>
+            Prev SWE Intern @
+            <a class="text-link"
+               href="https://nunext.dev/"
+               target="_blank"
+               rel="noopener noreferrer"
+            >NExT Consulting</a>
             </span>
         <span>
-                CS @
-                <a
-                        class="text-link"
-                        href="https://www.khoury.northeastern.edu/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                >Northeastern University</a>
-            </span>
+            CS @
+            <a class="text-link"
+               href="https://www.khoury.northeastern.edu/"
+               target="_blank"
+               rel="noopener noreferrer"
+            >Northeastern University</a>
+        </span>
     </p>
 
     <nav aria-label="Email, social links, and resume">
         <div class="social-container">
-            <a class="social-link social-link-github" href="https://github.com/Joeweh" target="_blank" title="GitHub"
-               aria-label="Joseph's GitHub" rel="noopener noreferrer">
-                <svg width="36" height="36" fill="currentColor" aria-hidden="true">
-                    <use href="#icon-github"></use>
-                </svg>
-            </a>
-
-            <a class="social-link social-link-linkedin" href="https://www.linkedin.com/in/joseph-siracusa"
-               target="_blank" title="LinkedIn" aria-label="Joseph's LinkedIn" rel="noopener noreferrer">
-                <svg width="36" height="36" fill="currentColor" aria-hidden="true">
-                    <use href="#icon-linkedin"></use>
-                </svg>
-            </a>
-
-            <a class="social-link social-link-devpost" href="https://devpost.com/Joeweh" target="_blank" title="Devpost"
-               aria-label="Joseph's Devpost" rel="noopener noreferrer">
-                <svg width="36" height="36" fill="currentColor" aria-hidden="true">
-                    <use href="#icon-devpost"></use>
-                </svg>
-            </a>
-
-            <a class="social-link social-link-email" href="mailto:joey@joeyqsa.dev" title="Email"
-               aria-label="Joseph's Email">
-                <svg width="36" height="36" fill="currentColor" aria-hidden="true">
-                    <use href="#icon-email"></use>
-                </svg>
-            </a>
+            {% for social in socials %}
+                <a class="social-link social-link-{{ social.icon }}" href="{{ social.href }}" title="{{ social.title }}" aria-label="{{ social.aria }}"{% if social.external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                    <svg width="36" height="36" fill="currentColor" aria-hidden="true">
+                        <use href="#icon-{{ social.icon }}"></use>
+                    </svg>
+                </a>
+            {% endfor %}
         </div>
 
         <a class="resume-link" href="/assets/documents/ResumeJosephSiracusa.pdf" target="_blank"

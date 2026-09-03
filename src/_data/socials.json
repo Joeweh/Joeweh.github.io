@@ -1,0 +1,29 @@
+[
+  {
+    "icon": "github",
+    "title": "GitHub",
+    "aria": "Joseph's GitHub",
+    "href": "https://github.com/Joeweh",
+    "external": true
+  },
+  {
+    "icon": "linkedin",
+    "title": "LinkedIn",
+    "aria": "Joseph's LinkedIn",
+    "href": "https://www.linkedin.com/in/joseph-siracusa",
+    "external": true
+  },
+  {
+    "icon": "devpost",
+    "title": "Devpost",
+    "aria": "Joseph's Devpost",
+    "href": "https://devpost.com/Joeweh",
+    "external": true
+  },
+  {
+    "icon": "email",
+    "title": "Email",
+    "aria": "Joseph's Email",
+    "href": "mailto:joey@joeyqsa.dev"
+  }
+]

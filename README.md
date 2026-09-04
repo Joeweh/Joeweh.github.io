@@ -35,3 +35,9 @@ To build without serving:
 ```bash
 npm run build   # outputs to _site/
 ```
+
+## License
+
+Source code — templates, CSS, and build config — is available under the [MIT License](LICENSE).
+
+Site content is not covered by that license and remains © 2026 Joseph Siracusa, all rights reserved. This includes the project descriptions, images, and résumé PDF.

@@ -18,11 +18,14 @@
     "build": "eleventy",
     "dev": "eleventy --serve",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "links": "linkinator _site --recurse --skip '^https'",
+    "links:all": "linkinator _site --recurse --retry --retry-errors"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
     "@shopify/prettier-plugin-liquid": "^1.11.0",
+    "linkinator": "^8.1.0",
     "prettier": "^3.9.6"
   }
 }

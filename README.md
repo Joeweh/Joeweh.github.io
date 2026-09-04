@@ -7,6 +7,7 @@ My personal portfolio website showcasing projects, experience, and contact infor
 - HTML / CSS
 - [Eleventy](https://www.11ty.dev/) (Liquid templates) for static site generation
 - Hosted on GitHub Pages, deployed via GitHub Actions
+- Prettier + EditorConfig for formatting
 
 ## Features
 
@@ -35,11 +36,18 @@ npm run dev
 
 Then open [http://localhost:8080](http://localhost:8080).
 
-To build without serving:
+## Scripts
 
-```bash
-npm run build   # outputs to _site/
-```
+| Script                 | What it does                                    |
+| ---------------------- | ----------------------------------------------- |
+| `npm run dev`          | Serve with live reload at http://localhost:8080 |
+| `npm run build`        | Build to `_site/`                               |
+| `npm run format`       | Format everything with Prettier                 |
+| `npm run format:check` | Verify formatting (runs in CI)                  |
+| `npm run links`\*      | Check internal links in `_site/` (runs in CI)   |
+| `npm run links:all`\*  | Check internal **and** external links           |
+
+\* The link checks read from `_site/`, so run `npm run build` first.
 
 ## License
 
